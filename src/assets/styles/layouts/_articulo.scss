@@ -1,0 +1,59 @@
+@layer base, display;
+
+@layer base {
+    .article__img {
+        background-image: url(../images/eco-circular.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50rem;
+
+
+        @supports (background-image: url('image.webp')) {
+            background-image: url(../images/eco-circular.webp);
+        }
+    }
+
+
+    :is(.article__content-1, .article__content-2) {
+        @include flex(column, space-between, center, center);
+        gap: 2rem;
+
+        @media screen and (min-width: $mq-min-width-992) {
+            flex-direction: row;
+            align-items: stretch;
+        }
+    }
+
+}
+
+
+@layer display {
+    .article {
+        container-type: inline-size;
+        container-name: bgcolor;
+    }
+
+
+    @container bgcolor (max-width: 800px) {
+        .article__title {
+            width: 100%;
+            box-shadow: 0 10px 5px $color_green_dark;
+            border-radius: 2rem;
+        }
+    }
+
+    @container bgcolor (min-width: 800px) {
+        .article__title:has(.base__title) {
+            width: 100%;
+            box-shadow: 0 10px 5px $color_orange;
+            border-radius: 2rem;
+        }
+    }
+
+    .article__content:has(.section__image) {
+        box-shadow: 0 10px 5px $color_violet;
+        border-radius: 2rem;
+    }
+
+}

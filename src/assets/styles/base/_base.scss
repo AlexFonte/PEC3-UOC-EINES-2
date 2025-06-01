@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+//font global per utilitzar rem
+html {
+  font-size: 10px;
+}
+
+//regla global per a tot el body
+body {
+  // height: 100vh;
+  margin: 0;
+  font-family: $font-family-text;
+  font-size: 1.6rem;
+  line-height: 24px;
+  background-color: $color_veige;
+  color: $color_blue;
+}
+
+//font family per a tots els títols
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-title;
+}
+
+//afegir cursor sobre el logo de la web
+.svg {
+  cursor: pointer;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.orange {
+  color: $color_orange;
+}
+
+.bg-green-light {
+  background-color: $color_green_light;
+}
+
+.bg-blue {
+  background-color: $color_blue;
+}
+
+.font-1-6-rem {
+  font-size: 1.6rem;
+}
+
+.text-decoration-none {
+  text-emphasis: none;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.base__title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.width-100 {
+  width: 100%;
+}

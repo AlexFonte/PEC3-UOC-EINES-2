@@ -1,0 +1,44 @@
+@use "sass:color";
+
+//################ FONTS ################
+$font-family-title: "Poppins", sans-serif;
+$font-family-text: "Onest", sans-serif;
+
+//################ COLORS ################
+$color-green: #2e7d32;
+$color-green-light: #a5d6a7;
+$color-veige: #f1f8e9;
+$color-white: #ffffff;
+$color-green-dark: #3b6f6e;
+$color-grey: #616161;
+$color-blue: #0277bd;
+$color-violet: #5e35b1;
+$color-orange: #ff7043;
+$bg-web: color-scale-lightness($color_green, 95%);
+$accordion-button-active-bg: color(display-p3 0.89 0.2 0.97 / 0.50);
+//################ MEDIA QUERIES ################
+
+$mq-min-width-420: 420px;
+$mq-min-width-600: 600px;
+$mq-min-width-768: 768px;
+$mq-min-width-800: 800px;
+$mq-min-width-992: 992px;
+$mq-min-width-1000: 1000px;
+$mq-min-width-1200: 1200px;
+
+// ################ BOX SHADOW ################
+
+$box-shadow: 5px 7px 5px 1px color-scale-alpha($color-green-dark, -40%);
+
+$theme-colors: (
+  "primary": $color-green,
+  "alert": $color-orange,
+  "secondary": $color-blue,
+  "warning": $color-violet,
+  "success": $color-green-dark,
+  "dark": $color-grey,
+  // "body-font-weight": bold,
+
+);
+$card-border-width: 5px;
+$card-border-color: $color-orange;

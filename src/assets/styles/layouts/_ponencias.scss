@@ -1,0 +1,55 @@
+@layer base, display;
+
+@layer base {
+    .ponencias {
+        @include flex(column, center, center, center);
+        background-color: $color_green_light;
+        width: 100%;
+        container-type: inline-size;
+        container-name: prova;
+    }
+
+    .ponencia__query {
+        width: 100%;
+    }
+
+    @container prova (min-width: 600px) {
+        .ponencia__query {
+            width: 100%;
+            background-color: $color_blue;
+            border: 5px solid $color_violet; // para pruebas visuales
+            border-radius: 2rem
+        }
+    }
+}
+
+@layer display {
+
+    .ponencias__list {
+        @include flex(column, center, stretch, center);
+        gap: 2rem;
+        flex-wrap: wrap;
+
+        @media screen and (min-width: $mq-min-width-800) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .ponencia__item {
+        width: 90%;
+
+        @media screen and (min-width: $mq-min-width-600) {
+            width: 70%;
+        }
+
+        @media screen and (min-width: $mq-min-width-800) {
+            width: 30%;
+        }
+
+        @media screen and (min-width: $mq-min-width-1000) {
+            width: 25%;
+        }
+    }
+
+}
