@@ -5,7 +5,7 @@
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
-import * as bootstrap from "bootstrap";
+// import * as bootstrap from "bootstrap";
 /**
  * Write any other JavaScript below
  */
@@ -13,5 +13,5 @@ import * as bootstrap from "bootstrap";
 +(function () {
   const university = "UOC";
   console.log(`Hello, ${university}!`);
-  bootstrap.Tooltip;
+  // bootstrap.Tooltip;
 })();
