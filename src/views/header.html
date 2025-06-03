@@ -1,30 +1,36 @@
 <header>
-    <nav class="nav">
-        <div class="nav__logo">
-            <!-- Logo pagina -->
-            <a class="hvr-grow" href="index.html" title="Logo de la web" hreflang="es" title="Inicio"
-                aria-label="Ir a inicio" data-bs-toggle="tooltip" data-bs-title="Ir a inicio"
-                data-bs-placement="bottom">
-                <img src="assets/images/logo-color.svg" alt="Logo de la web" width="300" class="nav__logo__img"
-                    loading="lazy">
-            </a>
-        </div>
-        <div class="nav__menu">
-            <ul class="nav__list">
-                <li class="nav__item hvr-grow-shadow"><a class="nav__item__a text-white" href="ponencias.html"
-                        hreflang="es" title="Ponencias" aria-label="Ir a ponencias" data-bs-toggle="tooltip"
-                        data-bs-title="Ir a ponencias" data-bs-placement="bottom"><i class="fa-solid fa-user-tie"></i>
-                        Ponencias</a></li>
-                <li class="nav__item hvr-grow-shadow"><a class="nav__item__a text-white" href="articulo.html"
-                        hreflang="es" title="Articulo" aria-label="Ir a articulo" data-bs-toggle="tooltip"
-                        data-bs-title="Ir a articulo" data-bs-placement="bottom"><i class="fa-regular fa-newspaper"></i>
-                        Articulo</a></li>
-                <li class="nav__item hvr-grow-shadow"><a class="nav__item__a text-white" href="contact.html"
-                        hreflang="es" title="Contacto" aria-label="Ir a contacto" data-bs-toggle="tooltip"
-                        data-bs-title="Ir a contacto" data-bs-placement="bottom"><i
-                            class="fa-solid fa-magnifying-glass"></i> Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="flex flex-col items-center gap-8 w-full py-8 md:flex-row md:justify-around">
+    <div>
+      <!-- Logo pagina -->
+      <a class="hvr-grow" href="index.html" title="Logo de la web" hreflang="es" title="Inicio"
+         aria-label="Ir a inicio" data-bs-toggle="tooltip" data-bs-title="Ir a inicio"
+         data-bs-placement="bottom">
+        <img src="assets/images/logo-color.svg" alt="Logo de la web" width="300" class="w-[250px] md:w-[300px]"
+             loading="lazy">
+      </a>
+    </div>
+    <div class="nav__menu">
+      <ul class="flex flex-col items-center justify-center  gap-12 my-0 mx-auto p-0 text-2xl font-semibold list-style-none text-decoration-none md:flex-row  md:justify-around">
+        <li class="nav__item hvr-grow-shadow bg-color-orange hover:bg-color-blue text-center">
+          <a class="text-decoration-none text-center text-color-white"
+            href="ponencias.html" hreflang="es" title="Ponencias" aria-label="Ir a ponencias"
+            data-bs-toggle="tooltip" data-bs-title="Ir a ponencias" data-bs-placement="bottom">
+            <i class="fa-solid fa-user-tie"></i> Ponencias</a></li>
+        <li class="nav__item hvr-grow-shadow bg-color-orange hover:bg-color-blue text-center">
+          <a class="text-decoration-none text-center text-color-white" href="articulo.html"
+            hreflang="es" title="Articulo" aria-label="Ir a articulo"
+            data-bs-toggle="tooltip"
+            data-bs-title="Ir a articulo" data-bs-placement="bottom"><i
+            class="fa-regular fa-newspaper"></i>
+            Articulo</a></li>
+        <li class="nav__item hvr-grow-shadow bg-color-orange hover:bg-color-blue text-center">
+          <a class="text-decoration-none text-center text-color-white" href="contact.html"
+             hreflang="es" title="Contacto" aria-label="Ir a contacto"
+             data-bs-toggle="tooltip"
+             data-bs-title="Ir a contacto" data-bs-placement="bottom"><i
+            class="fa-solid fa-magnifying-glass"></i> Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
 </header>

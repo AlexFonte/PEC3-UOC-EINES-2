@@ -12,12 +12,7 @@ html {
 //regla global per a tot el body
 body {
   // height: 100vh;
-  margin: 0;
-  font-family: $font-family-text;
-  font-size: 1.6rem;
   line-height: 24px;
-  background-color: $color_veige;
-  color: $color_blue;
 }
 
 //font family per a tots els títols
@@ -45,14 +40,6 @@ h6 {
 
 .orange {
   color: $color_orange;
-}
-
-.bg-green-light {
-  background-color: $color_green_light;
-}
-
-.bg-blue {
-  background-color: $color_blue;
 }
 
 .font-1-6-rem {

@@ -30,15 +30,4 @@ $mq-min-width-1200: 1200px;
 
 $box-shadow: 5px 7px 5px 1px color-scale-alpha($color-green-dark, -40%);
 
-$theme-colors: (
-  "primary": $color-green,
-  "alert": $color-orange,
-  "secondary": $color-blue,
-  "warning": $color-violet,
-  "success": $color-green-dark,
-  "dark": $color-grey,
-  // "body-font-weight": bold,
-
-);
 $card-border-width: 5px;
-$card-border-color: $color-orange;
