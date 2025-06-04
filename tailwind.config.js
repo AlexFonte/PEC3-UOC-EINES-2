@@ -23,6 +23,8 @@ module.exports = {
     },
     fontSize: {
       '2xl': '2rem',
+      '12px': '12.5px',
+      '14px': '14px',
     }
   },
   plugins: [],

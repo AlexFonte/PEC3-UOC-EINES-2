@@ -1,8 +1,8 @@
 .footer {
-  background-color: #3b6f6e;
-  color: $color_white;
-  text-align: center;
-  font-size: 1.4rem;
+  //background-color: #3b6f6e;
+  //color: $color_white;
+  //text-align: center;
+  //font-size: 1.4rem;
 
   a {
     color: $color_white;
@@ -13,41 +13,41 @@
   }
 
   //Contingunt del footer
-  &__container {
-    @include flex(column, center, center, center);
-    padding: 1rem 0;
-    max-width: 100%;
-    margin: auto;
+  //&__container {
+  //  @include flex(column, center, center, center);
+  //  padding: 1rem 0;
+  //  max-width: 100%;
+  //  margin: auto;
+  //
+  //  @media screen and (min-width: $mq-min-width-800) {
+  //    max-width: 80%;
+  //    flex-direction: column;
+  //    justify-content: space-between;
+  //  }
+  //}
 
-    @media screen and (min-width: $mq-min-width-800) {
-      max-width: 80%;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
+  //&__1 {
+  //  @include flex(column, center, center, center);
+  //  gap: 1rem;
+  //  width: 90%;
+  //
+  //  @media screen and (min-width: $mq-min-width-800) {
+  //    @include flex(row, space-between, center, center);
+  //    width: 90%;
+  //  }
+  //}
 
-  &__1 {
-    @include flex(column, center, center, center);
-    gap: 1rem;
-    width: 90%;
-
-    @media screen and (min-width: $mq-min-width-800) {
-      @include flex(row, space-between, center, center);
-      width: 90%;
-    }
-  }
-
-  &__2 {
-
-    @include flex(column, space-between, center, center);
-    width: 100%;
-    gap: 1rem;
-
-    @media screen and (min-width: $mq-min-width-992) {
-      flex-direction: row;
-      width: 90%;
-    }
-  }
+  //&__2 {
+  //
+  //  @include flex(column, space-between, center, center);
+  //  width: 100%;
+  //  gap: 1rem;
+  //
+  //  @media screen and (min-width: $mq-min-width-992) {
+  //    flex-direction: row;
+  //    width: 90%;
+  //  }
+  //}
 
   &__menu {
     @media screen and (min-width: $mq-min-width-1000) {
