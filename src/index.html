@@ -5,13 +5,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-  <meta name="description" content="Jornadas y charlas sobre la economia circular." />
+  <meta name="description" content="Jornadas y charlas sobre la economia circular."/>
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <link rel="icon" href="assets/images/logo-white.svg" type="image/svg" />
+  <link rel="icon" href="assets/images/logo-white.svg" type="image/svg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&family=Onest:wght@100..900&display=swap"
-    as="style" onload="this.rel='stylesheet'">
+        as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="assets/images/logo-color.svg" as="image">
   <link rel="preload" href="assets/images/logo-white.svg" as="image">
   <link rel="preload" href="assets/images/micro.jpg" as="image">
@@ -20,55 +20,66 @@
 </head>
 
 <body class="bg-color-veige text-color-blue font-texto text-[16px] m-0">
-  <div class="bg-no-repeat bg-cover bg-center min-h-[100%] bg-[url('../images/micro.jpg')]">
-    <!-- HEADER -->
-    <include src="./views/header.html"></include>
+<div class="bg-no-repeat bg-cover bg-center min-h-[100%] bg-[url('../images/micro.jpg')]">
+  <!-- HEADER -->
+  <include src="./views/header.html"></include>
 
-    <main
-      class="relative px-8 py-4 text-color-orange text-center w-full md:w-[90%] mx-auto gap-4 grid sm:grid-rows-6 sm:justify-center sm:items-center sm:content-center poster__content">
-      <div class="poster__title">
-        <h1 class="text-capitalize bg-primary text-white base__title poster__title-h1">ECONOMIA CIRULAR</h1>
-      </div>
-      <div class="poster__subtitle">
-        <h3 class="text-capitalize bg-blue text-white poster__subtitle__daily">Jornadas 2025</h3>
-      </div>
-
-      <div class="poster__resume">
-        <p>La economia cirular es un modelo de producción y consumo que implica dar el máximo uso a productos ya
-          existentes o reutilizarlos, y asi reducir los residuos al minimo</p>
-      </div>
-
-      <div class="poster__group-list poster__col1">
-        <ul class="list-unstyled list-group">
-          <li class="list-group-item bg-primary text-white border-white font-weight-bold">Beneficios</li>
-          <li class="list-group-item bg-green-light text-white border-white">Proteger el medio ambiente</li>
-          <li class="list-group-item bg-green-light text-white border-white">Reducir la dependencia de las materias
-            primas
-          </li>
-          <li class="list-group-item bg-green-light text-white border-white">Crear empleo</li>
-          <li class="list-group-item bg-green-light text-white border-white">Reduccion de costos para el consumidor</li>
-        </ul>
-      </div>
-
-      <div class="poster__group-list poster__col2">
-        <ul class="list-unstyled list-group">
-          <li class="list-group-item bg-primary text-white border-white font-weight-bold">Fechas</li>
-          <li class="list-group-item bg-green-light text-white border-white">2 y 5 de Mayo</li>
-          <li class="list-group-item bg-green-light text-white border-white">10 y 13 de Junio</li>
-          <li class="list-group-item bg-green-light text-white border-white">26 de Junio</li>
-        </ul>
-      </div>
-
-      <div class="poster__div-more hvr-grow-rotate shadow-lg">
-        <a href="ponencias.html" class="btn" hreflang="es" title="Ponencias" aria-label="Ir a ponencias"
-          data-bs-toggle="tooltip" data-bs-title="Ir a ponencias" data-bs-placement="bottom"><i
-            class="fa-brands fa-leanpub"></i> Saber más</a>
-      </div>
-
-    </main>
-  </div>
-  <include src="./views/footer.html"></include>
-  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <main
+    class="
+        grid
+        grid-rows-[repeat(6,auto)]
+        gap-4
+        text-center
+        items-center
+        justify-items-center
+        w-full
+        mx-auto
+        md:w-[90%]
+        lg:w-[80%]
+        md:grid-cols-2
+        lg:grid-cols-5
+        px-8 py-4
+        text-color-green
+      "
+  >
+    <div class="col-span-full md:col-span-2 lg:col-span-5">
+      <h1 class="capitalize bg-color-green text-white text-4xl font-bold rounded px-4 py-2 mb-2">ECONOMIA CIRULAR</h1>
+    </div>
+    <div class="col-span-full md:col-span-2 lg:col-start-3 lg:col-end-4">
+      <h3 class="capitalize bg-verde-texto text-white text-2xl font-semibold rounded px-3 py-1 mb-2">Jornadas 2025</h3>
+    </div>
+    <div class="col-span-full md:col-span-2 lg:col-start-2 lg:col-end-5">
+      <p class="max-w-xl mx-auto mb-4">
+        La economia cirular es un modelo de producción y consumo que implica dar el máximo uso a productos ya existentes
+        o reutilizarlos, y así reducir los residuos al mínimo.
+      </p>
+    </div>
+    <ul class="bg-white rounded shadow p-4 mb-4 md:w-[60%] mx-auto lg:col-start-4 lg:col-end-6">
+      <li class="bg-color-green-light text-white border-b-2 border-white font-bold px-2 py-1">Beneficios</li>
+      <li class="bg-color-green-light text-white border-b-2 border-white px-2 py-1">Proteger el medio ambiente</li>
+      <li class="bg-color-green-light text-white border-b-2 border-white px-2 py-1">Reducir la dependencia de las materias
+        primas
+      </li>
+      <li class="bg-color-green-light text-white border-b-2 border-white px-2 py-1">Crear empleo</li>
+      <li class="bg-color-green-light text-white px-2 py-1">Reducción de costos para el consumidor</li>
+    </ul>
+    <ul class="bg-white rounded shadow p-4 mb-4 md:w-[60%] mx-auto lg:col-start-1 lg:col-end-3">
+      <li class="bg-color-green text-white border-b-2 border-white font-bold px-2 py-1">Fechas</li>
+      <li class="bg-color-green-light text-white border-b-2 border-white px-2 py-1">2 y 5 de Mayo</li>
+      <li class="bg-color-green-light text-white border-b-2 border-white px-2 py-1">10 y 13 de Junio</li>
+      <li class="bg-color-green-light text-white px-2 py-1">26 de Junio</li>
+    </ul>
+    <div class="col-span-full md:col-span-2 lg:col-start-3 lg:col-end-4 w-full flex justify-center mt-6">
+      <a href="ponencias.html"
+         class="inline-block bg-color-green text-white font-bold py-2 px-6 rounded shadow-lg transition-transform transform hover:scale-105 hover:bg-verde-texto"
+         title="Ponencias" aria-label="Ir a ponencias">
+        <i class="fa-brands fa-leanpub"></i> Saber más
+      </a>
+    </div>
+  </main>
+</div>
+<include src="./views/footer.html"></include>
+<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>
