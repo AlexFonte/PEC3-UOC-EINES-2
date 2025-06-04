@@ -11,7 +11,10 @@ module.exports = {
         "color-green-dark": "#3b6f6e",
         "color-grey": "#616161",
         "color-blue": "#0277bd",
-        "color-violet": "#5e35b1",
+        "color-violet": {
+          DEFAULT: '#5e35b1', // para bg-color-violet
+          700: '#4d22ac',     // para bg-color-violet-700
+        },
         "color-orange": "#ff7043",
         "bg-web": "color-scale-lightness($color_green, 95%)",
         "accordion-button-active-bg": "color(display-p3 0.89 0.2 0.97 / 0.50)",
@@ -25,7 +28,9 @@ module.exports = {
       '2xl': '2rem',
       '12px': '12.5px',
       '14px': '14px',
-    }
+    },
+
   },
+
   plugins: [],
 };
