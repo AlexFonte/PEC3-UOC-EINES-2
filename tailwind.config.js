@@ -23,6 +23,11 @@ module.exports = {
         titulo: ["Poppins", "sans-serif"],
         texto: ["Onest", "sans-serif"],
       },
+      screens: {
+        '800': '800px',
+        '992': '992px',
+        '1000': '1000px',
+      },
     },
     fontSize: {
       '2xl': '2rem',
