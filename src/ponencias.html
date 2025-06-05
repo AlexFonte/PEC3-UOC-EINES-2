@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es" class="box-border text-[10px]">
 
 <head>
   <meta charset="utf-8">
@@ -23,11 +23,14 @@
   <title>UOC EINES 2 PEC 2</title>
 </head>
 
-<body>
+<body class="bg-color-veige leading-[24px]">
   <!-- HEADER -->
   <include src="./views/header.html"></include>
-  <main class="container mb-5">
-    <h1 class="base__title text-bg-primary rounded-5">Ponencias</h1>
+
+  <main class="mx-auto px-4 mb-[30px] w-full">
+
+    <include src="./views/page-title.html" locals='{"title":"Ponencias"}'></include>
+
     <section class="ponencias rounded-5">
       <div class="ponencia__query">
         <ul class="ponencias__list p-5">
