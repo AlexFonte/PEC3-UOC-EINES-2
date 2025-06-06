@@ -24,6 +24,7 @@ module.exports = {
         texto: ["Onest", "sans-serif"],
       },
       screens: {
+        '600': '600px',
         '800': '800px',
         '992': '992px',
         '1000': '1000px',

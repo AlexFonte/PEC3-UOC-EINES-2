@@ -27,13 +27,13 @@
   <!-- HEADER -->
   <include src="./views/header.html"></include>
 
-  <main class="container mx-auto px-4 mb-[30px] w-full max-w-[1320px]">
+  <main class="container mx-auto px-4 mb-[30px] w-[95%] lg:max-w-[1320px] md:w-[75%] lg:w-[90%]">
 
     <include src="./views/page-title.html" locals='{"title":"Ponencias"}'></include>
 
-    <section class="ponencias rounded-5">
-      <div class="ponencia__query">
-        <ul class="ponencias__list p-5">
+    <section class="flex flex-col justify-center items-center content-center">
+      <div class="w-full rounded-[20px] bg-color-green-light 600:border-[5px] 600:bg-color-blue 600:border-color-violet">
+        <ul class="flex flex-col flex-wrap gap-5 justify-center items-center content-center 800:flex-row 800:justify-between p-5">
 
           <li class="card ponencia__item rounded-5 hvr-grow">
             <img src="assets/images/p1.webp" class="card-img-top rounded-top-5 ponencia__img"
