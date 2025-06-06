@@ -3,45 +3,55 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UOC EINES 2 PEC 3</title>
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Cooking Contest 2024 – Recipes</title>
+  <!-- Asumes Tailwind CSS v3 y Font Awesome ya están incluidos vía Parcel -->
 </head>
-<body class="bg-gray-100 text-gray-800">
-<!-- Header / Navbar -->
-<header class="bg-white shadow">
-  <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-    <div class="text-2xl font-bold">Cooking Contest 2024</div>
+<body class="font-sans bg-gray-100 text-gray-800">
+<!-- Header -->
+<header class="w-full bg-white">
+  <div class="container mx-auto flex flex-row justify-between items-center py-4 px-6">
+    <!-- Nombre de la página a la izquierda -->
+    <div class="text-lg font-semibold text-black">
+      Cooking contest 2024 edition
+    </div>
+    <!-- Menú a la derecha -->
     <nav>
-      <ul class="flex space-x-6 text-gray-600">
+      <ul class="flex flex-row space-x-8 list-none p-0 m-0">
         <li>
-          <a href="#" class="hover:text-gray-900">Home</a>
+          <a href="#" class="text-black text-base no-underline hover:text-gray-700">
+            Home
+          </a>
         </li>
         <li>
-          <a href="#" class="hover:text-gray-900">The Contest</a>
+          <a href="#" class="text-black text-base no-underline hover:text-gray-700">
+            The contest
+          </a>
         </li>
         <li>
-          <a href="#" class="hover:text-gray-900 font-semibold">Recipes</a>
+          <a href="#" class="text-black text-base no-underline hover:text-gray-700">
+            Recipes
+          </a>
         </li>
         <li>
-          <a href="#" class="hover:text-gray-900">Contestants</a>
+          <a href="#" class="bg-black text-white text-base px-4 py-2 rounded-lg no-underline">
+            Contestants
+          </a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 
+
+<!-- Contenido Principal -->
 <main class="container mx-auto px-6 py-10">
-  <!-- Breadcrumb (opcional, según diseño) -->
-  <nav class="mb-6 text-sm text-gray-500">
-    <a href="#" class="hover:text-gray-700">Home</a>
-    <i class="fas fa-chevron-right mx-2"></i>
-    <a href="#" class="hover:text-gray-700">The Contest</a>
-    <i class="fas fa-chevron-right mx-2"></i>
-    <a href="#" class="hover:text-gray-700">Recipes</a>
-    <i class="fas fa-chevron-right mx-2"></i>
-    <a href="#" class="hover:text-gray-700">Contestants</a>
-    <i class="fas fa-chevron-right mx-2"></i>
-    <span>Cooking Contest 2024 Edition</span>
-  </nav>
+  <section class="container mx-auto px-6 py-12 text-center">
+    <h1 class="text-6xl font-bold text-black">Contestants</h1>
+    <p class="mt-2 text-gray-500 text-lg">
+      This section describes the recipes of the best contestants
+    </p>
+  </section>
 
   <!-- Sección: The Recipes -->
   <section>
@@ -88,7 +98,7 @@
   </section>
 </main>
 
-<!-- Footer con enlaces adicionales -->
+<!-- Footer -->
 <footer class="bg-white border-t mt-12">
   <div class="container mx-auto px-6 py-6 flex flex-wrap justify-center space-x-4 text-gray-600">
     <a href="#" class="hover:text-gray-900">Home</a>
@@ -102,7 +112,5 @@
     <a href="#" class="hover:text-gray-900">Cooking Contest 2024 Edition</a>
   </div>
 </footer>
-<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-
 </body>
 </html>

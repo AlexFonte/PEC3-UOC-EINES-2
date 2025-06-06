@@ -29,12 +29,13 @@ module.exports = {
         '992': '992px',
         '1000': '1000px',
       },
+      fontSize: {
+        '2xl': '2rem',
+        '12px': '12.5px',
+        '14px': '14px',
+      },
     },
-    fontSize: {
-      '2xl': '2rem',
-      '12px': '12.5px',
-      '14px': '14px',
-    },
+
   },
   plugins: [],
 };
