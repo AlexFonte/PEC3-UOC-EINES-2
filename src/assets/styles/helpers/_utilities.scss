@@ -1,6 +1,12 @@
 .body{
   @apply bg-color-veige font-texto text-[16px] m-0 leading-[24px];
 }
-//.card-custom {
-//    @apply shadow-lg rounded-lg p-6 bg-beis-fondo;
-//}
+
+.logo-img{
+  @apply w-[250px] md:w-[300px];
+}
+
+.title-page{
+  @apply text-color-white font-titulo text-center bg-color-green font-bold rounded-[25px];
+}
+

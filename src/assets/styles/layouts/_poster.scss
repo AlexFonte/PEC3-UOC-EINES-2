@@ -1,0 +1,3 @@
+.custom-grid{
+  @apply grid grid-rows-[repeat(6,auto)] grid-cols-1 800:grid-rows-[repeat(5,auto)] 800:grid-cols-[repeat(2,1fr)] 1000:grid-rows-[repeat(5,1fr)] 1000:grid-cols-[repeat(5,1fr)] gap-4 text-center items-center justify-items-center w-full mx-auto  800:w-[90%] 992:w-[80%] px-8 py-4 text-color-green;
+}

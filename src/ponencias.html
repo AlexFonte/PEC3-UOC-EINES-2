@@ -5,13 +5,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,  initial-scale=1.0">
-  <meta name="description" content="Jornadas y charlas sobre la economia circular." />
+  <meta name="description" content="Jornadas y charlas sobre la economia circular."/>
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <link rel="icon" href="assets/images/logo-white.svg" type="image/svg" />
+  <link rel="icon" href="assets/images/logo-white.svg" type="image/svg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins&family=Onest:wght@100..900&display=swap"
-    as="style" onload="this.rel='stylesheet'">
+        as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="assets/images/logo-color.svg" as="image">
   <link rel="preload" href="assets/images/logo-white.svg" as="image">
   <link rel="preload" href="assets/images/p1.webp" as="image">
@@ -24,101 +24,83 @@
 </head>
 
 <body class="body">
-  <!-- HEADER -->
-  <include src="./views/header.html"></include>
+<!-- HEADER -->
+<include src="./views/header.html"></include>
 
-  <main class="container mx-auto px-4 mb-[30px] w-[95%] lg:max-w-[1320px] md:w-[75%] lg:w-[90%]">
+<main
+  class="container mx-auto px-4 mb-[30px] w-[90%] sm:max-w-[540px] md:max-w-[720px] lg:max-w[1140px] 2xl:max-w-[1320px]">
 
-    <include src="./views/page-title.html" locals='{"title":"Ponencias"}'></include>
+  <include src="./views/page-title.html" locals='{"title":"Ponencias"}'></include>
 
-    <section class="flex flex-col justify-center items-center content-center">
-      <div class="w-full rounded-[20px] bg-color-green-light 600:border-[5px] 600:bg-color-blue 600:border-color-violet">
-        <ul class="flex flex-col flex-wrap gap-5 justify-center items-center content-center 800:flex-row 800:justify-between p-5">
+  <section class="flex flex-col justify-center items-center content-center">
+    <div class="w-full rounded-[20px] bg-color-green-light md:border-[5px] md:bg-color-blue md:border-color-violet">
 
-          <li class="card ponencia__item rounded-5 hvr-grow">
-            <img src="assets/images/p1.webp" class="card-img-top rounded-top-5 ponencia__img"
-              alt="Persona par la ponencia" loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title"><strong>MARIA RODRIGUEZ</strong></h2>
-              <h3 class="card-subtitle mb-2 text-secondary">Taller de economía circular y residuo cero</h3>
-              <p class="card-text">Encuentra soluciones innovadoras y colaboradoras para la gestión de los residuos de
-                tu urbanización.</p>
-              <p class="card-text text-warning"><strong>02/05/2025 – 18:00</strong></p>
-            </div>
-          </li>
+      <ul class="flex flex-col flex-wrap gap-[20px] justify-center items-stretch content-center 800:flex-row 800:justify-between p-[30px]">
 
-          <li class="card ponencia__item rounded-5 hvr-grow">
-            <img src="assets/images/p2.webp" class="card-img-top rounded-top-5 ponencia__img"
-              alt="Persona par la ponencia" loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title"><strong>MARIONA DIAZ</strong></h2>
-              <h3 class="card-subtitle mb-2 text-secondary">Economía circular. Nuevo modelo económico de producción
-                y consumo</h3>
-              <p class="card-text">¿Cómo a través de la economía circular las empresas pueden crear valor mediante la
-                reutilización y el reciclaje de productos?</p>
-              <p class="card-text text-warning"><strong>05/05/2025 – 17:30</strong></p>
-            </div>
-          </li>
+        <include src="./views/talks.html" locals='{
+        "image": "assets/images/p1.webp",
+        "alt": "Persona par la ponencia",
+        "name": "MARIA RODRIGUEZ",
+        "titlePonencia": "Taller de economía circular y residuo cero",
+        "descPonencia": "Encuentra soluciones innovadoras y colaboradoras para la gestión de los residuos de tu urbanización.",
+        "date": "02/05/2025 – 18:00"
+        }'></include>
 
-          <li class="card ponencia__item rounded-5 hvr-grow">
-            <img src="assets/images/p3.webp" class="card-img-top rounded-top-5 ponencia__img"
-              alt="Persona par la ponencia" loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title"><strong>ONA CASTELLS</strong></h2>
-              <h3 class="card-subtitle mb-2 text-secondary">Ecodiseño y ecoinnovación de materiales de construcción
-              </h3>
-              <p class="card-text">La sostenibilidad en los materiales de construcción es clave para la preservación
-                del medio ambiente. Para ello, es vital impulsar el ecodiseño y ecoinnovación en el diseño, y en la
-                fabricación de materiales.</p>
-              <p class="card-text text-warning"><strong>10/06/2025 – 16:30</strong></p>
-            </div>
-          </li>
-        </ul>
-        <ul class="ponencias__list mb-5 p-5">
-          <li class="card ponencia__item rounded-5 hvr-grow">
-            <img src="assets/images/p4.webp" class="card-img-top rounded-top-5 ponencia__img"
-              alt="Persona par la ponencia" loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title"><strong>ISABEL JIMENEZ</strong></h2>
-              <h3 class="card-subtitle mb-2 text-secondary">Economía circular. Nuevo modelo económico de producción
-                y consumo</h3>
-              <p class="card-text">Nuestra generación más joven es el futuro de nuestro planeta. Talleres, actividades
-                didácticas, manualidades… infinidad de actividades para que los más pequeños aprendan desde una temprana
-                edad la importancia de cuidar el planeta en el que vivimos.</p>
-              <p class="card-text text-warning"><strong>13/06/2025 – 17:00</strong></p>
-            </div>
-          </li>
+        <include src="./views/talks.html" locals='{
+        "image": "assets/images/p2.webp",
+        "alt": "Persona par la ponencia",
+        "name": "MARIONA DIAZ",
+        "titlePonencia": "Economía circular. Nuevo modelo económico de producción y consumo",
+        "descPonencia": "¿Cómo a través de la economía circular las empresas pueden crear valor mediante la reutilización y el reciclaje de productos?",
+        "date": "05/05/2025 – 17:30"
+        }'></include>
 
-          <li class="card ponencia__item rounded-5 hvr-grow">
-            <img src="assets/images/p5.webp" class="card-img-top rounded-top-5 ponencia__img"
-              alt="Persona par la ponencia" loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title"><strong>OSCAR FERNANDEZ</strong></h2>
-              <h3 class="card-subtitle mb-2 text-secondary">Comida y economía circular</h3>
-              <p class="card-text">Cambiar nuestro sistema alimentario es una de las medidas más impactantes que podemos
-                tomar para abordar el cambio climático, crear ciudades saludables y reconstruir la biodiversidad.</p>
-              <p class="card-text text-warning"><strong>26/06/2025 – 15:00</strong></p>
-            </div>
-          </li>
 
-          <li class="card ponencia__item rounded-5 hvr-grow">
-            <img src="assets/images/p6.webp" class="card-img-top rounded-top-5 ponencia__img"
-              alt="Persona par la ponencia" loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title"><strong>EMMA GUTIERREZ</strong></h2>
-              <h3 class="card-subtitle mb-2 text-secondary">Economía circular de los residuos</h3>
-              <p class="card-text">La economía circular es el nuevo modelo de producción y consumo que garantiza un
-                crecimiento sostenible en el tiempo, optimizando los recursos, reduciendo el consumo de materias primas
-                y aprovechando los residuos.</p>
-              <p class="card-text text-warning"><strong>26/06/2025 – 17:00</strong></p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <include src="./views/footer.html"></include>
-  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+        <include src="./views/talks.html" locals='{
+        "image": "assets/images/p3.webp",
+        "alt": "Persona par la ponencia",
+        "name": "ONA CASTELLS",
+        "titlePonencia": "Ecodiseño y ecoinnovación de materiales de construcción",
+        "descPonencia": "La sostenibilidad en los materiales de construcción es clave para la preservación del medio ambiente. Para ello, es vital impulsar el ecodiseño y ecoinnovación en el diseño, y en la fabricación de materiales.",
+        "date": "10/06/2025 – 16:30"
+        }'></include>
+
+      </ul>
+      <ul class="flex flex-col flex-wrap gap-[20px] justify-center items-stretch content-center 800:flex-row 800:justify-between p-5">
+
+        <include src="./views/talks.html" locals='{
+        "image": "assets/images/p4.webp",
+        "alt": "Persona par la ponencia",
+        "name": "ISABEL JIMENEZ",
+        "titlePonencia": "Economía circular. Nuevo modelo económico de producción y consumo",
+        "descPonencia": "Nuestra generación más joven es el futuro de nuestro planeta. Talleres, actividades didácticas, manualidades… infinidad de actividades para que los más pequeños aprendan desde una temprana edad la importancia de cuidar el planeta en el que vivimos.",
+        "date": "13/06/2025 – 17:00"
+        }'></include>
+
+        <include src="./views/talks.html" locals='{
+        "image": "assets/images/p5.webp",
+        "alt": "Persona par la ponencia",
+        "name": "OSCAR FERNANDEZ",
+        "titlePonencia": "Comida y economía circular",
+        "descPonencia": "Cambiar nuestro sistema alimentario es una de las medidas más impactantes que podemos tomar para abordar el cambio climático, crear ciudades saludables y reconstruir la biodiversidad.",
+        "date": "26/06/2025 – 15:00"
+         }'></include>
+
+        <include src="./views/talks.html" locals='{
+       "image": "assets/images/p6.webp",
+        "alt": "Persona par la ponencia",
+        "name": "EMMA GUTIERREZ",
+        "titlePonencia": "Economía circular de los residuos",
+        "descPonencia": "La economía circular es el nuevo modelo de producción y consumo que garantiza un crecimiento sostenible en el tiempo, optimizando los recursos, reduciendo el consumo de materias primas y aprovechando los residuos",
+        "date": "26/06/2025 – 17:00"
+         }'></include>
+
+      </ul>
+    </div>
+  </section>
+</main>
+<include src="./views/footer.html"></include>
+<script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>
